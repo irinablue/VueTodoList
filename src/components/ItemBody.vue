@@ -1,11 +1,11 @@
 <template>
-    <h1>{{ siteName }}</h1>
+    <div class="task-body">{{ descr }}</div>
 </template>
 
 <script>
 export default {
     props: {
-        siteName: {
+        descr: {
             type: String,
             default: '',
             required: true
@@ -14,8 +14,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-h1 {
-    font-size: 170%;
+<style lang="scss" scoped>
+.task-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 </style>

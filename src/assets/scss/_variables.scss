@@ -1,0 +1,7 @@
+$breakpointTablet: 768px;
+$breakpointMobile: 600px;
+
+$fullWidthColumn: 100%;
+$halfWidthColumn: calc(100% / 2);
+$thirdWidthColumn: calc(100% / 3);
+$twoThirdWidthColumn: calc(100% - #{$thirdWidthColumn});

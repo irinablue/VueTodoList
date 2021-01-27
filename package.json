@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "npx eslint --ext .js,.vue src"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -29,13 +29,20 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "indent": ["error", 4],
+      "semi": [2, "always"],
+      "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+      "vue/html-indent": ["error", 4],
+      "vue/singleline-html-element-content-newline": ["off"],
+      "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+    }
   },
   "browserslist": [
     "> 1%",

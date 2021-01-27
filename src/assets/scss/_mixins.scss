@@ -1,0 +1,5 @@
+@mixin box-sizing($property) {
+    -webkit-box-sizing: $property;
+    -ms-box-sizing: $property;
+    box-sizing: $property;
+}

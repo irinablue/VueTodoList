@@ -1,6 +1,6 @@
 <template>
     <div class="item-header-container">
-        <h2>{{ title }}</h2>
+        <h2 class="item-title">{{ title }}</h2>
         <ItemControl 
             v-for="control in controls"
             :key="control"
@@ -57,7 +57,7 @@ export default {
 .item-header-container {
     display: flex;
     
-    h2 {
+    .item-title {
         margin: 0;
         padding-top: 5px;
         font-size: 130%;

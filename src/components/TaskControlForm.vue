@@ -21,12 +21,14 @@
             />
             <div v-if="isEditModeOn">
                 <button
+                    class="btn"
                     type="button"
                     @click="saveItem"
                 >
                     Сохранить
                 </button>
                 <button
+                    class="btn"
                     type="button"
                     @click="cancelEdit"
                 >
@@ -35,12 +37,14 @@
             </div>
             <div v-else>
                 <button
+                    class="btn"
                     type="button"
                     @click="addTask"
                 >
                     Добавить задачу
                 </button>
                 <button
+                    class="btn"
                     type="reset"
                     @click="resetForm"
                 >
@@ -153,7 +157,7 @@ export default {
 
 <style scoped lang="scss">
 .control-form {
-    button + button {
+    .btn + .btn {
         margin-left: 5px;
     }
 }

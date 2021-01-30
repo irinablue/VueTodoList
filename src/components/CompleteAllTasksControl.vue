@@ -1,6 +1,6 @@
 <template>
     <button
-        class="button"
+        class="btn"
         @click="doAction"
     >
         {{ title }}
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.button {
+.btn {
     margin-top: 10px;
 }
 </style>

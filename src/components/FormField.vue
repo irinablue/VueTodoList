@@ -1,15 +1,17 @@
 <template>
     <div class="control-field">
-        <label>{{ element.label }}</label>
+        <label class="field-label">{{ element.label }}</label>
         <input
             v-if="element.type === 'input-text'"
             :value="value"
+            class="field-input"
             type="text"
             @input="$emit('input', $event.target.value)"
         >
         <textarea
             v-else-if="element.type === 'textarea'"
             :value="value"
+            class="field-textarea"
             @input="$emit('input', $event.target.value)"
         />
         <ErrorBlock
@@ -45,14 +47,14 @@ export default {
 .control-field {
     margin-bottom: 5px;
 }
-label {
+.field-label {
     display: block;
 }
-input {
+.field-input {
     width: 100%;
     height: 30px;
 }
-textarea {
+.field-textarea {
     width: 100%;
     height: 50px;
 }

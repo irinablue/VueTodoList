@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ siteName }}</h1>
+    <h1 class="site-title">{{ siteName }}</h1>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h1 {
+.site-title {
     font-size: 170%;
 }
 </style>
